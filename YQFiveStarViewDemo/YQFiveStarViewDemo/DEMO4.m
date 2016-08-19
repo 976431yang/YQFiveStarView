@@ -11,6 +11,8 @@
 
 @interface DEMO4 ()
 @property(nonatomic,strong)NSTimer *timer;
+
+@property(nonatomic,strong)YQFiveStarView *StarView;
 @end
 
 @implementation DEMO4
@@ -24,10 +26,30 @@
                                                                            [UIScreen mainScreen].bounds.size.width-100,
                                                                            50)];
     
-    view.Score = @3.5;
+    view.Score = @1;
     
     [self.view addSubview:view];
     
+    self.StarView = view;
+    
+    //--------------------------------------------------
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(ChangeScore) userInfo:nil repeats:YES];
+}
+
+-(void)ChangeScore{
+    
+    float score = (rand()%500)*0.01;
+    
+    self.StarView.Score = [NSNumber numberWithFloat:score];
+    
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    [self.timer invalidate];
 }
 
 - (void)didReceiveMemoryWarning {
