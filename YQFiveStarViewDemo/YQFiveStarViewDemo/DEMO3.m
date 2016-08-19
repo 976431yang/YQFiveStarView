@@ -21,8 +21,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    YQFiveStarView *view = [[YQFiveStarView alloc]initWithFrame:CGRectMake(50, 200,
-                                                                           [UIScreen mainScreen].bounds.size.width-100,
+    YQFiveStarView *view = [[YQFiveStarView alloc]initWithFrame:CGRectMake(10, 200,
+                                                                           [UIScreen mainScreen].bounds.size.width-20,
                                                                            50)];
     view.canChoose = YES;
     view.animation = YES;
