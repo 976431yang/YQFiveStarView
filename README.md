@@ -11,11 +11,13 @@ YQFiveStarView *view = [[YQFiveStarView alloc]initWithFrame:CGRectMake(50, 200,3
 view.Score = @3.5;
 [self.view addSubview:view];
 ```
+ ![image](https://github.com/976431yang/YQFiveStarView/blob/master/YQFiveStarViewDemo/image/normal.png)
 #####更换图标：
 ```objective-c
 view.starImage_Full = [UIImage imageNamed:@"img1.png"];
 view.starImage_Empty = [UIImage imageNamed:@"img2.png"];
 ```
+![image](https://github.com/976431yang/YQFiveStarView/blob/master/YQFiveStarViewDemo/image/changeimage.png)
 ####可以点击的模式：
 ```objective-c
 view.canChoose = YES;
@@ -24,3 +26,4 @@ view.canChoose = YES;
 ```objective-c
 view.animation = YES;
 ```
+![image](https://github.com/976431yang/YQFiveStarView/blob/master/YQFiveStarViewDemo/image/animation.gif)
