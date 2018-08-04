@@ -1,4 +1,4 @@
-# YQImageCompressor
+# YQFiveStarView
 
 #### 微博：畸形滴小男孩
 ##### iOS端 简单的五星评价控件
